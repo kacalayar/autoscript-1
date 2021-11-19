@@ -26,24 +26,24 @@ sudo gem install lolcat
 # Running screenfetch
 cd
 rm -rf /root/.bashrc
-wget -O /root/.bashrc https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/.bashrc
+wget -O /root/.bashrc https://raw.githubusercontent.com/kacalayar/autoscript/main/.bashrc
 #install cf
-wget https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/cloudflare.sh && chmod +x cloudflare.sh && ./cloudflare.sh
+wget https://raw.githubusercontent.com/kacalayar/autoscript/main/cloudflare.sh && chmod +x cloudflare.sh && ./cloudflare.sh
 #install ssh ovpn
-wget https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh
+wget https://raw.githubusercontent.com/kacalayar/autoscript/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/kacalayar/autoscript/main/sstp.sh && chmod +x sstp.sh && ./sstp.sh
 #install ssr
-wget https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/ssr.sh && chmod +x ssr.sh && ./ssr.sh
-wget https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/sodosok.sh && chmod +x sodosok.sh && ./sodosok.sh
+wget https://raw.githubusercontent.com/kacalayar/autoscript/main/ssr.sh && chmod +x ssr.sh && ./ssr.sh
+wget https://raw.githubusercontent.com/kacalayar/autoscript/main/sodosok.sh && chmod +x sodosok.sh && ./sodosok.sh
 #installwg
-wget https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/wireguard.sh && chmod +x wireguard.sh && ./wireguard.sh
+wget https://raw.githubusercontent.com/kacalayar/autoscript/main/wireguard.sh && chmod +x wireguard.sh && ./wireguard.sh
 #install v2ray
-wget http://raw.githubusercontent.com/Gl33ch3r/autoscript/main/ins-vt.sh && chmod +x ins-vt.sh && ./ins-vt.sh
+wget http://raw.githubusercontent.com/kacalayar/autoscript/main/ins-vt.sh && chmod +x ins-vt.sh && ./ins-vt.sh
 #install L2TP
-wget https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/ipsec.sh && chmod +x ipsec.sh && ./ipsec.sh
-wget https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/kacalayar/autoscript/main/ipsec.sh && chmod +x ipsec.sh && ./ipsec.sh
+wget https://raw.githubusercontent.com/kacalayar/autoscript/main/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 #install WebsocketSSH
-wget https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/inswssh.sh && chmod +x inswssh.sh && ./inswssh.sh
+wget https://raw.githubusercontent.com/kacalayar/autoscript/main/inswssh.sh && chmod +x inswssh.sh && ./inswssh.sh
 # set time GMT +8
 ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
 # install webserver
@@ -51,9 +51,9 @@ apt -y install nginx
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/kacalayar/autoscript/main/nginx.conf"
 mkdir -p /home/vps/public_html
-wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/vps.conf"
+wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/kacalayar/autoscript/main/vps.conf"
 /etc/init.d/nginx restart
 
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
@@ -83,7 +83,7 @@ WantedBy=multi-user.target
 EOF
 systemctl daemon-reload
 systemctl enable autosett
-wget -O /etc/set.sh "https://raw.githubusercontent.com/Gl33ch3r/autoscript/main/set.sh"
+wget -O /etc/set.sh "https://raw.githubusercontent.com/kacalayar/autoscript/main/set.sh"
 chmod +x /etc/set.sh
 history -c
 echo "1.2" > /home/ver
@@ -133,6 +133,6 @@ echo ""  | tee -a log-install.txt
 echo "   - Dev/Main                : Gon Freecs"  | tee -a log-install.txt
 echo "   - Telegram                : T.me/gonfreecs600"  | tee -a log-install.txt
 echo "   - Whatsapp                : 09980804178"  | tee -a log-install.txt
-echo "------------------Script Created By Gl33ch3r-----------------" | tee -a log-install.txt
+echo "------------------Script Created By kacalayar-----------------" | tee -a log-install.txt
 echo ""
 rm -f setup.sh
